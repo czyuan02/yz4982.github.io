@@ -25,15 +25,16 @@ Biostatistics · Columbia University<br>
 Eduction
 ------------------------------------------------------------
 ### Columbia University, Mailman School of Public Health
-M.S. in Biostatistics
-Sep 2024 – May 2026
-
+M.S. in Biostatistics <br>
+Sep 2024 – May 2026 <br>
 Focus: regression modeling, categorical data analysis, survival analysis
-Evidence-based decision-making and interpretation to support health policy & system improvement
+Evidence-based decision-making and interpretation to support health policy & system improvement <br>
 Integrates epidemiology, health economics, and social determinants into public-health analytics
 
 ### University of Delaware
-B.S. in Statistics · GPA 3.66 / 4.00 · Dean’s List (four consecutive semesters)
+B.S. in Statistics <br> 
+GPA 3.66 / 4.00  <br>
+Dean’s List (four consecutive semesters) <br>
 Sep 2020 – May 2024
 
 <p>&nbsp;</p>
@@ -41,45 +42,45 @@ Sep 2020 – May 2024
 Experience
 ------------------------------------------------------------
 ### Strategic Analysis Intern — Sinopharm Group
-May 2025 – Aug 2025
-Compiled documentation on pharma AI large-model applications; mapped use cases and performance outcomes to inform enterprise medical-AI strategy.
+May 2025 – Aug 2025 <br>
+Compiled documentation on pharma AI large-model applications; mapped use cases and performance outcomes to inform enterprise medical-AI strategy. <br>
 
-Distilled core insights from diverse sources, combining qualitative and quantitative indicators to drive actionable recommendations.
+Distilled core insights from diverse sources, combining qualitative and quantitative indicators to drive actionable recommendations. <br>
 
 Produced concise analytical briefs for leadership on AI integration opportunities and risks.
 
 <p>&nbsp;</p>
 
 ### CES Intern — IQVIA
-Jan 2025 – Apr 2025
-Mapped global gene- and cell-therapy pipelines for rare diseases and tumor immunotherapies
+Jan 2025 – Apr 2025 <br>
+Mapped global gene- and cell-therapy pipelines for rare diseases and tumor immunotherapies. <br>
 
-Identified trends in indications, trial design, development stages; organized product-stage, endpoint, and patient-profile data in Excel.
+Identified trends in indications, trial design, development stages; organized product-stage, endpoint, and patient-profile data in Excel. <br> 
 
-Built report summaries and slide decks; wrote clear minutes from client interviews and internal calls highlighting key needs and analytical directions.
+Built report summaries and slide decks; wrote clear minutes from client interviews and internal calls highlighting key needs and analytical directions. 
 
 <p>&nbsp;</p>
 
 ### Data Analysis Intern — Alibaba Group
-Jun 2023 – Aug 2023
-Preprocessed multi-source sales, real-estate, and health data in Python (missing-value imputation, renaming, merging, outlier handling).
+Jun 2023 – Aug 2023 <br>
+Preprocessed multi-source sales, real-estate, and health data in Python (missing-value imputation, renaming, merging, outlier handling). <br>
 
-Sales forecasting: linear and decision-tree models to project next-year sales.
+Sales forecasting: linear and decision-tree models to project next-year sales. <br>
 
-Housing price trends: Mapbox spatial visualization to study metro accessibility vs. price clustering.
+Housing price trends: Mapbox spatial visualization to study metro accessibility vs. price clustering. <br>
 
-Health-risk prediction: Cox regression and decision-tree models on physical-exam data (age, BMI, blood pressure, glucose); evaluated classifiers with ROC and dose–response analyses.
+Health-risk prediction: Cox regression and decision-tree models on physical-exam data (age, BMI, blood pressure, glucose); evaluated classifiers with ROC and dose–response analyses. <br>
 
 <p>&nbsp;</p>
 
 Projects
 ------------------------------------------------------------
-Undergraduate Grade Analysis — University of Delaware (Feb 2024 – May 2024)
+Undergraduate Grade Analysis — University of Delaware (Feb 2024 – May 2024) <br>
 Analyzed 1999–2023 GPA data to assess grade-inflation trends; presented results internally to inform course-evaluation policy discussions.
 
 <p>&nbsp;</p>
 
 Technical Skills
 ------------------------------------------------------------
-Languages: R, Python, Stata, SAS
+Languages: R, Python, Stata, SAS <br>
 Data Science: data cleaning, visualization, regression, survival analysis
