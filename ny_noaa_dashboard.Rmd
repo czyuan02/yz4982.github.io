@@ -1,0 +1,163 @@
+---
+title: "NY NOAA Weather Dashboard"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cosmo
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(lubridate)
+library(plotly)
+library(p8105.datasets)
+
+data("ny_noaa", package = "p8105.datasets")
+```
+
+Data Clean
+```{r}
+# In ny_noaa, temperatures are stored in tenths of °C and precipitation in tenths of mm. Convert them to commonly used units for interpretability.
+noaa <- ny_noaa |>
+  mutate(
+    tmax = as.numeric(tmax),
+    tmin = as.numeric(tmin),
+    prcp = as.numeric(prcp),
+    snow = as.numeric(snow),
+    snwd = as.numeric(snwd),
+    date = as.Date(date)
+  ) |>
+  
+mutate(
+  tmax_c = tmax / 10, 
+  tmin_c = tmin / 10,
+  prcp_mm = prcp / 10,
+  year = year(date),
+  month = month(date),
+  season = case_when(
+    month %in% c(12, 1, 2) ~ "Winter",
+    month %in% c(3, 4, 5) ~ "Spring",
+    month %in% c(6, 7, 8) ~ "Summer",
+    TRUE ~ "Fall"
+    )
+  )
+
+```
+
+```{r}
+# Choose the station with the most complete paired measurements
+top_station_id <- noaa |>
+  summarise(n_complete = sum(!is.na(tmax_c) & !is.na(tmin_c)), .by = id) |>
+  arrange(desc(n_complete)) |>
+  slice(1) |>
+  pull(id)
+
+# Keep data for the selected station
+noaa_one <- noaa |> filter(id == top_station_id)
+
+# Boxplot data: positive precipitation only to focus on distribution shape
+box_df <- noaa_one |> dplyr::filter(!is.na(prcp_mm), prcp_mm > 0)
+
+# Scatter data: random sample to keep the interactive plot responsive
+set.seed(123)
+scatter_df <- noaa |>
+  dplyr::filter(!is.na(tmax_c), !is.na(tmin_c)) |>
+  dplyr::slice_sample(n = 5000)
+
+# Monthly means for the line chart
+snow_year <- noaa_one |>
+  mutate(has_snow = as.integer(snow > 0)) |>
+  summarise(n_days = sum(has_snow, na.rm = TRUE), .by = year)
+
+monthly_one <- noaa_one |>
+  mutate(month_date = floor_date(date, "month")) |>
+  summarise(
+    tmax_c = mean(tmax_c, na.rm = TRUE),
+    tmin_c = mean(tmin_c, na.rm = TRUE),
+    .by = month_date
+  )
+
+# 保证季节顺序稳定，便于颜色一一对应
+noaa <- noaa |>
+  mutate(season = factor(season, levels = c("Winter", "Spring", "Summer", "Fall")))
+
+# 柔和的季节调色盘（Pastel 系）
+season_pal <- c(
+  "Winter" = "#B3CDE3",
+  "Spring" = "#CCEBC5",
+  "Summer" = "#FED9A6",
+  "Fall"   = "#DECBE4" 
+)
+
+line_tmax <- "#86BBD8" 
+line_tmin <- "#F6AEAA"
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Chart A — Monthly Temperature Trend (Lines)
+```{r}
+# This line chart reports monthly mean Tmax and Tmin for the same station as Chart A. The trends illustrate strong seasonality and provide context for the point cloud in Chart B.
+plot_ly(monthly_one, x = ~month_date) |>
+add_trace(
+y = ~tmax_c, type = "scatter", mode = "lines",
+name = "Monthly Mean Tmax (°C)",
+line = list(color = line_tmax, width = 3)
+) |>
+add_trace(
+y = ~tmin_c, type = "scatter", mode = "lines",
+name = "Monthly Mean Tmin (°C)",
+line = list(color = line_tmin, width = 3)
+) |>
+layout(
+xaxis = list(title = "Month", gridcolor = "rgba(0,0,0,0.07)", zeroline = FALSE),
+yaxis = list(title = "Temperature (°C)", gridcolor = "rgba(0,0,0,0.07)", zeroline = FALSE),
+legend = list(orientation = "h", x = 0, y = 1.05),
+plot_bgcolor = "white",
+paper_bgcolor = "white"
+)
+```
+
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B — Tmin vs Tmax (Scatter)
+```{r}
+# This scatterplot shows the relationship between daily minimum and maximum temperatures. Coloring by season reveals distinct seasonal clusters, and the tooltips provide station, date, and values for closer inspection.
+
+scatter_df |>
+  mutate(hover_txt = paste0(
+    "Station: ", id,
+    "<br>Date: ", date,
+    "<br>Tmin: ", round(tmin_c,1), " °C",
+    "<br>Tmax: ", round(tmax_c,1), " °C",
+    "<br>Season: ", season
+    )) |>
+  plot_ly(
+    x = ~tmin_c, y = ~tmax_c, color = ~season,
+    type = "scatter", mode = "markers",
+    text = ~hover_txt, hoverinfo = "text",
+    opacity = 0.4
+    ) |>
+  layout(
+    xaxis = list(title = "Tmin (°C)"),
+    yaxis = list(title = "Tmax (°C)")
+    )
+
+```
+
+### Chart C - Precipitation Distribution by Season (Boxplot)
+```{r}
+# This chart summarizes the distribution of positive daily precipitation for the selected station across seasons. Box lengths reflect interquartile ranges and whiskers show typical variability; points beyond whiskers highlight potential outliers.
+
+plot_ly(box_df,x = ~season, y = ~prcp_mm, color = ~season, type = "box") |>
+  layout(
+    xaxis = list(title = "Season"),
+    yaxis = list(title = "Precipitation (mm)"),
+    showlegend = FALSE
+)
+```

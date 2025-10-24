@@ -7,9 +7,9 @@ I’m a biostatistics student at Columbia Mailman.
 This site hosts my projects, notes, and a few fun side pages.
 
 ## Quick Links
-<a href="about.html">About</a> — hobbies and personal notes
-<a href="resume.html">Resume</a> — academic & professional experience
-
+<a href="about.html">About</a> — hobbies and personal notes <br>
+<a href="resume.html">Resume</a> — academic & professional experience <br>
+<a href="ny_noaa_dashboard.html"> NY NOAA Dashboard</a> — Recent Work 
 
 Here is the picture of NYC. Aug 2022
 

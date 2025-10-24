@@ -8,6 +8,8 @@ navbar:
       href: "about.html"
     - text: "Resume"
       href: "resume.html"
+    - text: "NY NOAA Dashboard"
+      href: "ny_noaa_dashboard.html"
   right:
     - icon: "fa-envelope fa-lg"
       href: "mailto:yuanyuanzhang942@gmail.com"

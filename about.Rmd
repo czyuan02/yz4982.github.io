@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 description: "Yuanyuan Zhang — a bit about me"
 ---
 
@@ -9,9 +9,11 @@ Hi! I’m Yuanyuan Zhang, a graduate student at Columbia University Mailman Scho
 
 Hobbies & Interests
 ------------------------------------------------------------
-🌍 Exploring new neighborhoods in NYC
-🍰 Desserts — macarons, cakes, and anything seasonal
-📚 Reading philosophy & psychology books, especially Taoism and mindfulness topics
+🌍 Exploring new neighborhoods in NYC <br>
+🍰 Desserts — macarons, cakes, and anything seasonal <br>
+📚 Reading philosophy & psychology books, especially Taoism and mindfulness topics <br>
+
+<p>&nbsp;</p>
 
 Here are some picture about me.
 <img src="Picture/autumn.jpeg" alt="autumn" style="width:75%;border-radius:12px; display:block; margin:10px 0;">  
