@@ -1,0 +1,85 @@
+---
+title: Resume - Yuanyuan Zhang
+description: "Personal website — Resume"
+---
+<p>&nbsp;</p>
+
+<img src="Picture/resumeP.jpg" alt="Banner"
+     style="width:25%; max-width:520px; height:auto; border-radius:12px; display:block; margin:0 auto 12px;">
+
+<p>&nbsp;</p>
+
+::: {style="text-align:center; margin:0 0 14px 0;"}
+# Yuanyuan Zhang
+
+<span style="font-size:1.80rem; line-height:1.5;">
+Biostatistics · Columbia University<br>
+4650 Broadway, New York, NY · 302-763-2880 ·<br>
+<a href="mailto:yuanyuanzhang942@gmail.com">yuanyuanzhang942@gmail.com</a> ·
+<a href="https://github.com/czyuan02">GitHub</a> ·
+<a href="https://www.linkedin.com/in/yuanyuan-zhang-8b006a1bb/">LinkedIn</a>
+</span>
+:::
+<p>&nbsp;</p>
+
+Eduction
+------------------------------------------------------------
+### Columbia University, Mailman School of Public Health
+M.S. in Biostatistics
+Sep 2024 – May 2026
+
+Focus: regression modeling, categorical data analysis, survival analysis
+Evidence-based decision-making and interpretation to support health policy & system improvement
+Integrates epidemiology, health economics, and social determinants into public-health analytics
+
+### University of Delaware
+B.S. in Statistics · GPA 3.66 / 4.00 · Dean’s List (four consecutive semesters)
+Sep 2020 – May 2024
+
+<p>&nbsp;</p>
+
+Experience
+------------------------------------------------------------
+### Strategic Analysis Intern — Sinopharm Group
+May 2025 – Aug 2025
+Compiled documentation on pharma AI large-model applications; mapped use cases and performance outcomes to inform enterprise medical-AI strategy.
+
+Distilled core insights from diverse sources, combining qualitative and quantitative indicators to drive actionable recommendations.
+
+Produced concise analytical briefs for leadership on AI integration opportunities and risks.
+
+<p>&nbsp;</p>
+
+### CES Intern — IQVIA
+Jan 2025 – Apr 2025
+Mapped global gene- and cell-therapy pipelines for rare diseases and tumor immunotherapies
+
+Identified trends in indications, trial design, development stages; organized product-stage, endpoint, and patient-profile data in Excel.
+
+Built report summaries and slide decks; wrote clear minutes from client interviews and internal calls highlighting key needs and analytical directions.
+
+<p>&nbsp;</p>
+
+### Data Analysis Intern — Alibaba Group
+Jun 2023 – Aug 2023
+Preprocessed multi-source sales, real-estate, and health data in Python (missing-value imputation, renaming, merging, outlier handling).
+
+Sales forecasting: linear and decision-tree models to project next-year sales.
+
+Housing price trends: Mapbox spatial visualization to study metro accessibility vs. price clustering.
+
+Health-risk prediction: Cox regression and decision-tree models on physical-exam data (age, BMI, blood pressure, glucose); evaluated classifiers with ROC and dose–response analyses.
+
+<p>&nbsp;</p>
+
+Projects
+------------------------------------------------------------
+Undergraduate Grade Analysis — University of Delaware (Feb 2024 – May 2024)
+Analyzed 1999–2023 GPA data to assess grade-inflation trends; presented results internally to inform course-evaluation policy discussions.
+
+<p>&nbsp;</p>
+
+Technical Skills
+------------------------------------------------------------
+Languages: R, Python, Stata, SAS
+Data Science: data cleaning, visualization, regression, survival analysis

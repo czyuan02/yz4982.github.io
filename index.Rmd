@@ -1,12 +1,21 @@
 ---
-title: "My awesome website"
-output: 
-  html_document:
-    toc: true
-    toc_float: true
-    theme: cerulean
+title: "Hi, I'm Yuanyuan"
+description: "Biostatistics • Public Health & Biostatistics"
 ---
 
-# This is Jeff's awesome website
+I’m a biostatistics student at Columbia Mailman. 
+This site hosts my projects, notes, and a few fun side pages.
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+## Quick Links
+<a href="about.html">About</a> — hobbies and personal notes
+<a href="resume.html">Resume</a> — academic & professional experience
+
+
+Here is the picture of NYC. Aug 2022
+
+<img src="Picture/nyc.jpeg" alt="NYC" style="width:75%;border-radius:12px; display:block; margin:10px 0;">  
+
+<p>&nbsp;</p>
+
+Here is the picture of Flagstuff, AZ. Jan 2024
+<img src="Picture/snow.jpg" alt="snow" style="width:75%;border-radius:12px; display:block; margin:10px 0;">  

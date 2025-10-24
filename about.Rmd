@@ -1,9 +1,19 @@
 ---
 title: "About"
+description: "Yuanyuan Zhang — a bit about me"
 ---
 
-### About this site
+Hi! I’m Yuanyuan Zhang, a graduate student at Columbia University Mailman School of Public Health (Biostatistics). When I’m not study or working on projects, I enjoy exploring the city, trying new desserts, and finding cozy place to read.
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+<p>&nbsp;</p>  
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+Hobbies & Interests
+------------------------------------------------------------
+🌍 Exploring new neighborhoods in NYC
+🍰 Desserts — macarons, cakes, and anything seasonal
+📚 Reading philosophy & psychology books, especially Taoism and mindfulness topics
+
+Here are some picture about me.
+<img src="Picture/autumn.jpeg" alt="autumn" style="width:75%;border-radius:12px; display:block; margin:10px 0;">  
+
+<img src="Picture/autumn2.jpeg" alt="autumn2" style="width:75%;border-radius:12px; display:block; margin:10px 0;">  

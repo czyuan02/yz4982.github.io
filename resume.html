@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume - Yuanyuan Zhang</title>
+
+<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cerulean.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="mailto:yuanyuanzhang942@gmail.com">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/czyuan02/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://www.linkedin.com/in/yuanyuan-zhang-8b006a1bb/">
+    <span class="fa fa-linkedin"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Resume - Yuanyuan Zhang</h1>
+
+</div>
+
+
+<p>
+ 
+</p>
+<p><img src="Picture/resumeP.jpg" alt="Banner"
+     style="width:25%; max-width:520px; height:auto; border-radius:12px; display:block; margin:0 auto 12px;"></p>
+<p>
+ 
+</p>
+<div id="yuanyuan-zhang" class="section level1"
+style="text-align:center; margin:0 0 14px 0;">
+<h1>Yuanyuan Zhang</h1>
+<p><span style="font-size:1.80rem; line-height:1.5;"> Biostatistics ·
+Columbia University<br> 4650 Broadway, New York, NY · 302-763-2880 ·<br>
+<a href="mailto:yuanyuanzhang942@gmail.com">yuanyuanzhang942@gmail.com</a>
+· <a href="https://github.com/czyuan02">GitHub</a> ·
+<a href="https://www.linkedin.com/in/yuanyuan-zhang-8b006a1bb/">LinkedIn</a>
+</span></p>
+</div>
+<p>
+ 
+</p>
+<div id="eduction" class="section level2">
+<h2>Eduction</h2>
+<div id="columbia-university-mailman-school-of-public-health"
+class="section level3">
+<h3>Columbia University, Mailman School of Public Health</h3>
+<p>M.S. in Biostatistics Sep 2024 – May 2026</p>
+<p>Focus: regression modeling, categorical data analysis, survival
+analysis Evidence-based decision-making and interpretation to support
+health policy &amp; system improvement Integrates epidemiology, health
+economics, and social determinants into public-health analytics</p>
+</div>
+<div id="university-of-delaware" class="section level3">
+<h3>University of Delaware</h3>
+<p>B.S. in Statistics · GPA 3.66 / 4.00 · Dean’s List (four consecutive
+semesters) Sep 2020 – May 2024</p>
+<p>
+ 
+</p>
+</div>
+</div>
+<div id="experience" class="section level2">
+<h2>Experience</h2>
+<div id="strategic-analysis-intern-sinopharm-group"
+class="section level3">
+<h3>Strategic Analysis Intern — Sinopharm Group</h3>
+<p>May 2025 – Aug 2025 Compiled documentation on pharma AI large-model
+applications; mapped use cases and performance outcomes to inform
+enterprise medical-AI strategy.</p>
+<p>Distilled core insights from diverse sources, combining qualitative
+and quantitative indicators to drive actionable recommendations.</p>
+<p>Produced concise analytical briefs for leadership on AI integration
+opportunities and risks.</p>
+<p>
+ 
+</p>
+</div>
+<div id="ces-intern-iqvia" class="section level3">
+<h3>CES Intern — IQVIA</h3>
+<p>Jan 2025 – Apr 2025 Mapped global gene- and cell-therapy pipelines
+for rare diseases and tumor immunotherapies</p>
+<p>Identified trends in indications, trial design, development stages;
+organized product-stage, endpoint, and patient-profile data in
+Excel.</p>
+<p>Built report summaries and slide decks; wrote clear minutes from
+client interviews and internal calls highlighting key needs and
+analytical directions.</p>
+<p>
+ 
+</p>
+</div>
+<div id="data-analysis-intern-alibaba-group" class="section level3">
+<h3>Data Analysis Intern — Alibaba Group</h3>
+<p>Jun 2023 – Aug 2023 Preprocessed multi-source sales, real-estate, and
+health data in Python (missing-value imputation, renaming, merging,
+outlier handling).</p>
+<p>Sales forecasting: linear and decision-tree models to project
+next-year sales.</p>
+<p>Housing price trends: Mapbox spatial visualization to study metro
+accessibility vs. price clustering.</p>
+<p>Health-risk prediction: Cox regression and decision-tree models on
+physical-exam data (age, BMI, blood pressure, glucose); evaluated
+classifiers with ROC and dose–response analyses.</p>
+<p>
+ 
+</p>
+</div>
+</div>
+<div id="projects" class="section level2">
+<h2>Projects</h2>
+<p>Undergraduate Grade Analysis — University of Delaware (Feb 2024 – May
+2024) Analyzed 1999–2023 GPA data to assess grade-inflation trends;
+presented results internally to inform course-evaluation policy
+discussions.</p>
+<p>
+ 
+</p>
+</div>
+<div id="technical-skills" class="section level2">
+<h2>Technical Skills</h2>
+<p>Languages: R, Python, Stata, SAS Data Science: data cleaning,
+visualization, regression, survival analysis</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
